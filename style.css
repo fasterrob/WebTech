@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.genresbox {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.genresbox input {
+    margin-left: 3em;
+}
