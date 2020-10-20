@@ -17,22 +17,10 @@
 <body>
     <div class="container" style="margin-top: 2em;">
         <div>
+            <button class="btn btn-success"><a href="index.html"style="color:white">Back</a></button>
             <h1>List Movie</h1>
         </div>
-        <table class="table" border="1px">
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Creators</th>
-                    <th>Age</th>
-                    <th>Genres</th>
-                    <th>Cast</th>
-                    <th>Poster</th>
-                </tr>
-            </thead>
-            <tbody id="dataRow">
-            </tbody>
-        </table>
+        <div class="row" id="dataRow"></div>
     </div>
 
     <script>
@@ -53,14 +41,11 @@
         var database = firebase.database();
         var dataRef = database.ref('/movie');
         dataRef.on('child_added', function(snapshot, prevChildKey) {
-            var item = snapshot.val()
-            document.getElementById('dataRow').innerHTML += "<tr><td>" +
-                item.title + "</td><td>" +
-                item.creators + "</td><td>" +
-                item.age + "+" + "</td><td>" +
-                item.Genres + "</td><td>" +
-                item.cast + "</td><td>" +
-                "<img src=\"" + item.urlpost + "\">" + "</td></tr>"
+            var data = snapshot.val()
+            document.getElementById('dataRow').innerHTML += `<div class="col-3 box_movie">
+                <img src="${data.urlpost}"><p>Title : ${data.title} ${data.year})</p>
+                <p>Creators : ${data.creators}</p><p>Age : ${data.age}</p><p>Genres : ${data.Genres}</p>
+                <p>Cast : ${data.cast}</p></div>`
         });
     </script>
 </body>

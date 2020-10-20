@@ -18,3 +18,17 @@
 .genresbox input {
     margin-left: 3em;
 }
+
+.box_movie {
+    display: inline-block;
+    border-radius: 5px;
+    color: black;
+    text-align: left;
+    margin: 1px;
+    padding: 1em;
+    width: 250px;
+}
+
+img {
+    width: 100%;
+}
