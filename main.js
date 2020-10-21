@@ -27,12 +27,10 @@ function typeMovies() {
 }
 
 
-let myFirebase = firebase.database();
-let dataRef = myFirebase.ref('/movie');
-
 function pushfirebase() {
     let ttitle = document.getElementById('title').value;
     let yyear = document.getElementById('year').value;
+    let dduration = document.getElementById('duration').value;
     let aage = document.getElementById('age').value;
     let ttypeMovie = document.getElementById('typeMovie').value;
     let sseasons = document.getElementById('textseasons').value;
@@ -50,9 +48,9 @@ function pushfirebase() {
     let uurlpost = document.getElementById('urlpost').value;
     let uurlyoutube = document.getElementById('urlyoutube').value;
 
+
+
     var arraycheckbox = [];
-
-
     if (ccheck1 == true || ccheck2 == true || ccheck3 == true || ccheck4 == true || ccheck5 == true || ccheck6 == true || ccheck7 == true) {
         if (ccheck1 == true) {
             arraycheckbox.push("Action")
@@ -76,10 +74,10 @@ function pushfirebase() {
             arraycheckbox.push("Crime")
         }
     }
-
-    dataRef.push({
+    firebase.database().ref('movie/' + ttitle).set({
         title: ttitle,
         year: yyear,
+        dduration: dduration,
         age: aage,
         typeMovie: ttypeMovie,
         seasons: sseasons,
@@ -92,6 +90,4 @@ function pushfirebase() {
         urlyoutube: uurlyoutube
 
     });
-
-    arraycheckbox = [];
 }

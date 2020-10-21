@@ -1,0 +1,34 @@
+{
+    "movie": {
+        "The Lion King": {
+            "Genres": [
+                "Action",
+                "Horror"
+            ],
+            "age": "2000",
+            "cast": "asfsa",
+            "creators": "safasfasf",
+            "episode": "",
+            "recap": "asfsafa",
+            "seasons": "",
+            "title": "The Lion King",
+            "typeMovie": "movie",
+            "urlpost": "asfsa",
+            "urlyoutube": "asfsaf",
+            "year": "2000"
+        },
+        "asffsa": {
+            "age": "",
+            "cast": "",
+            "creators": "",
+            "episode": "",
+            "recap": "",
+            "seasons": "",
+            "title": "asffsa",
+            "typeMovie": "0",
+            "urlpost": "",
+            "urlyoutube": "",
+            "year": ""
+        }
+    }
+}
