@@ -16,7 +16,7 @@
 }
 
 .genresbox input {
-    margin-left: 3em;
+    margin-left: 1em;
 }
 
 .box_movie {
@@ -31,4 +31,12 @@
 
 img {
     width: 100%;
+}
+
+form {
+    text-align: left;
+}
+
+.selectmos {
+    text-align: left;
 }
