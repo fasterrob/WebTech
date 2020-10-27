@@ -40,6 +40,7 @@ function Checksend_movie() {
     var check = document.getElementById('movie-title').value;
     if (check.length != 0) {
         pushfirebase_movie()
+        console.log("1")
 
     } else {
         alert("Please Enter Title")

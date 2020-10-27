@@ -21,16 +21,18 @@
 
 .box_movie {
     display: inline-block;
+    border: 2px solid black;
     border-radius: 5px;
     color: black;
     text-align: left;
-    margin: 1px;
+    margin: 1em;
     padding: 1em;
     width: 250px;
 }
 
 img {
     width: 100%;
+    margin-bottom: 1em;
 }
 
 form,
