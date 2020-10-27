@@ -23,22 +23,6 @@
             <div class="col-6">
                 <h1>Movie</h1>
                 <form>
-                    <!-- <div class="form-group typeMovie">
-                        <label for="">Movie Or Series : </label>
-                        <select class="form-control" onchange="typeMovies()" name="" id="typeMovie">
-                            <option value="0" selected  disabled>Select</option>
-                            <option value="movie">Movie</option>
-                            <option value="series">Series</option>
-                        </select>
-                    </div>
-                    <div class="form-group textseasons" id="seasons">
-                        <label for="">How many seasons : </label>
-                        <input class="form-control" type="text" name="" id="textseasons">
-                    </div>
-                    <div class="form-group textepisode" id="episode">
-                        <label for="">How many episode : </label>
-                        <input class="form-control" type="text" name="" id="textepisode">
-                    </div> -->
                     <div class="form-group title">
                         <label for="">Title Movie : </label>
                         <input class="form-control" type="text" id="movie-title">
@@ -115,58 +99,26 @@
                         <label for="">Recommended age : </label>
                         <input class="form-control" type="text" name="" id="series-age">
                     </div>
-                    <div class="form-group textseasons" id="seasons">
+                    <div class="form-group textseasons">
                         <label for="">How Many Seasons : </label>
                         <select class="form-control" name="seasons" id="seasons">
-                            <!-- <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option> -->
+                            <option value="0">Select</option>
                         </select>
                     </div>
-                    <div class="form-group textepisode" id="episode">
+                    <div class="form-group textepisode">
                         <label for="">How Many Episode : </label>
-                        <select class="form-control" name="episode" id="episode">
-                            <!-- <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option> -->
+                        <select class="form-control" name="episode" id="episode" onchange="clickepisode()">
+                            <option value="0">Select</option>
                         </select>
+                        <!-- <button class="btn btn-primary" style="margin: 1em;" type="button" id="btnepisods" onclick="clickepisode()">ENTER</button> -->
                     </div>
                     <div class="form-group">
-                        <label for="">Preview</label>
+                        <label id="lnepisode">Name Episode : </label>
+                        <div id="name-episode">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Preview : </label>
                         <textarea class="form-control" name="series-preview" id="series-preview"></textarea>
                     </div>
                     <div class="form-group creators">
@@ -205,7 +157,7 @@
                         <input class="form-control " type="url " name=" " id="series-urlyoutube" placeholder="ไม่มีไม่ต้องใส่">
                     </div>
                 </form>
-                <input class="btn btn-success" type="submit" value="Submit" id="commentBtn" onclick="Checksend2()">
+                <input class="btn btn-success" type="submit" value="Submit" id="commentBtn" onclick="Checksend_series()">
             </div>
         </div>
     </div>

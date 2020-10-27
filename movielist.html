@@ -20,7 +20,7 @@
             <a class="btn btn-success" href="index.html" style="margin: 20px;">Back</a>
         </div>
         <div class="selectmos">
-            <select name="movieorseries" id="movieorseries">
+            <select class="form-control" name="movieorseries" id="movieorseries">
                 <option value="0">Movie</option>
                 <option value="1">Series</option>
             </select>
@@ -41,7 +41,6 @@
         };
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
-
 
         var database = firebase.database();
         var dataRef = database.ref('/movie');

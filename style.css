@@ -33,10 +33,15 @@ img {
     width: 100%;
 }
 
-form {
+form,
+.selectmos {
     text-align: left;
 }
 
-.selectmos {
-    text-align: left;
+.ipepisode {
+    margin-bottom: 1em;
+}
+
+#lnepisode {
+    display: none;
 }
